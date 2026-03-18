@@ -1,12 +1,13 @@
 import React from 'react'
-import FaceExpression from './features/components/FaceExpression';
+import { RouterProvider } from 'react-router-dom'
+import { router } from './app.routes.jsx'
+
+import "./features/shared/styles/global.scss"
+
 
 const App = () => {
   return (
-    <div>
-      <h1 style={{ textAlign: "center" }}>Face Expression Detection</h1>
-      <FaceExpression />
-    </div>
+    <RouterProvider router={router} />
   )
 }
 

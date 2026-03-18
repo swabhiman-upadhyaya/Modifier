@@ -1,0 +1,60 @@
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: var(--primary-color);
+
+
+  .form-container {
+    background-color: var(--background-color);
+    padding: 2rem;
+    border-radius: 0.4rem;
+    box-shadow: 2px 4px 8px var(--secondary-color);
+    width: 100%;
+    max-width: 380px;
+
+    .form-group {
+      margin-bottom: 1rem;
+
+      label {
+        display: block;
+        margin-bottom: 0.5rem;
+        color: var(--text-color);
+      }
+
+      input {
+        min-width: 100%;
+        padding: 0.75rem;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 1rem;
+
+        &:focus {
+          border-color: var(--primary-color);
+          outline: none;
+        }
+      }
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 0.9rem;
+      color: var(--text-color);
+      text-align: center;
+
+      a {
+        color: var(--primary-color);
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+
+
+  }
+}
