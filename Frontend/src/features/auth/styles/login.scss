@@ -51,6 +51,7 @@
       a {
         color: var(--primary-color);
         text-decoration: none;
+        transition: all 0.7s ease-in;
 
         &:hover {
           text-decoration: underline;
