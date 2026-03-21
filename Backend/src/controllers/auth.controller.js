@@ -1,9 +1,9 @@
-const userModel = require("../models/user.model")
-const bcrypt = require("bcryptjs")
-const jwt = require("jsonwebtoken")
+const userModel = require("../models/user.model");
+const bcrypt = require("bcryptjs");
+const jwt = require("jsonwebtoken");
 
-const blackListModel = require("../models/blacklist.model")
-const redis = require("../config/cache")
+const blackListModel = require("../models/blacklist.model");
+const redis = require("../config/cache");
 
 const registerController = async (req, res) => {
 

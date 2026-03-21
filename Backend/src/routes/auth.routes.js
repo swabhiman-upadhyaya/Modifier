@@ -24,7 +24,7 @@ router.post("/login", authController.loginUserController)
  * @description Get the authenticated user's information
  * @access Private
  */
-router.get("/get-me", authMiddleware.authUser, authController.getMe)
+router.get("/get-me", authMiddleware.authUser, authController.getMe);
 
 /**
  * @route POST /auth/logout
