@@ -4,10 +4,10 @@ const client = new imageKit({
   privateKey: process.env.IMAGEKIT_PRIVATE_KEY
 });
 
-async function uploadFile({ buffer, filename, folder = "" }) {
+async function uploadFile({ buffer, fileName, folder = "" }) {
   const file = await client.files.upload({
     file: await imageKit.toFile(Buffer.from(buffer)),
-    filename: filename,
+    fileName: fileName,
     folder
   })
 
